@@ -1,0 +1,723 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: url(iconopacidad.png);
+	background-repeat: no-repeat;
+	background-size: 900px;
+	background-position: center;
+}
+
+@font-face{
+	font-family: "Mifuente";
+	src: url("Fonts/SourceSansPro-Bold.ttf");
+}
+@font-face{
+	font-family: "Mifuente2";
+	src: url("Fonts/SourceSansPro-Light.ttf");
+}
+
+@font-face{
+	font-family: "Mifuente3";
+	src: url("Fonts/SourceSansPro-SemiBold.ttf");
+}
+
+#flotante{
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		z-index: 2;
+		/*display: none;*/
+		top:-500vh;
+	}
+
+	#cuadro{
+		position: absolute;
+		width: 100%;
+		height: 500vh;
+		background-image: radial-gradient(#4c8ffb, rgb(0, 96, 255));
+		opacity: .9;
+	}
+
+	#equis{
+		position: absolute;
+		width: 60px;
+		height: 60px; 
+		border-radius: 50%;
+		text-align: center;
+		line-height: 30px;
+		z-index: 2;
+		left: 200px;
+		top: 34px;
+		cursor: pointer;
+		transition-duration: .5s;	
+	}
+
+	#equis:hover{
+		
+
+	}
+
+	#equis a {
+		color: white;
+		font-size: 40px;
+	}
+
+.navegacion{
+	text-align: center;
+	width: 500px;
+	margin: 177px auto;
+
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+}
+
+.menu > li a{
+	font-size: 2.4em;
+	color: white;
+	text-decoration: none;
+}
+
+.menu > li > a{
+	display: block;
+	text-decoration: none;
+	padding: 15px 20px;
+	font-size: 2.4em;
+}
+
+.menu li a:hover{
+	color: #b1b4b7;
+	transition: all .3s;
+}
+
+
+#inicio{
+	background: white;
+	color: #0873ff;
+	border-radius: 57px;
+}
+
+/*submenu*/
+
+.submenu{
+	position: absolute;
+	width: 100%;
+	top: 18px;
+	margin-left: 400px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+
+}
+
+.submenu li a{
+
+	display: block;
+	padding: 15px 30px;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 0px;
+	max-width: 1500px;
+	margin: auto;
+}
+
+header a{
+	color: #fff;
+	font-size: 40px;
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+header a:hover{
+	font-size: 45px;
+	transition: all .3s;
+}
+
+header h1{
+	font-family: Mifuente3;
+	font-size: 30px;
+	margin-right: 50px;
+	margin-top: 25px;
+	color: #fff;
+}
+
+#ld button{
+	width: 200px;
+	margin-right: 50px;
+	margin-top: 10px;
+	border-radius: 60px;
+	background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+	border-image: linear-gradient(90deg, #f74e63, #fe8a65);
+	color: #fff;
+}
+
+#promocional{
+	margin: 100px 115px 0px 0px;
+}
+
+
+section#sectionUno{
+	display: flex;
+	justify-content: space-between;
+	background: url(degradado.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 600px;
+	max-width: 1500px;
+	margin: auto;
+}
+
+#ci{
+	margin-top: 100px;
+	margin-left: 40px;
+}
+
+#ci h4{
+	font-size: 25px;
+}
+
+#ci p{
+	font-size: 40px;
+	margin-bottom: 15vh;
+}
+
+#ci a{
+	margin-left: 10vh;
+	padding: 17px 70px 15px 70px;
+	border-radius: 60px;
+	background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+}
+
+#ci a:hover{
+	font-size: 30px;
+	transition: all .3s;
+}
+
+#sectionUno img{
+	width: 250px;
+	height: 250px;
+	margin-top: 100px;
+	margin-right: 240px;
+}
+
+#Viamed{
+	text-decoration: none;
+	color: #fff;
+	background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+	height: 40px;
+	width: 170px;
+	margin-top: 5px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Viamed: hover{
+	width: 270px;
+	height: 270px;
+}
+
+#sectionDos{
+	display: flex;
+	justify-content: space-between;
+	height: 545px;
+	max-width: 1500px;
+	margin: auto;
+}
+
+#miImagen{
+	width: 500px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+#ci2 button{
+	cursor: pointer;
+	margin-left: 10vh;
+	padding: 10px 20px 10px 20px;
+	border: 0px solid #fff;
+	margin-left: -90px;
+	border-radius: 60px;
+	background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+}
+
+#cd2{
+	margin-right: 10vw;
+	margin-top: 50px;
+}
+
+#cd2 h4{
+	color: black;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+#cd2 p{
+	color: black;
+	font-size: 40px;
+	margin-bottom: 60px;
+}
+
+.uno{
+	margin-bottom: 50px;
+}
+
+.uno a{
+	padding: 17px 70px 15px 70px;
+	border-radius: 60px;
+	background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+}
+
+
+.dos a{
+	text-decoration: none;
+	color: #fff;
+	background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+	height: 60px;
+	width: 350px;
+	font-size: 20px;
+	margin-top: 5px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#sectionTres{
+	flex-direction: column;
+	width: 98vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+}
+
+
+#promocionalTres{
+	margin-top: 50px;
+	margin-bottom: 150px; 
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 100%;
+	height: 400px;
+	background-image: radial-gradient(#4c8ffb, rgb(0, 96, 255));
+	max-width: 1500px;
+	margin: auto;
+}
+
+#redes{
+	width: 180px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#redes h1{
+	color: #fff;
+}
+
+#info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 155px;
+}
+
+#info p{
+	font-size: 40px;
+}
+
+#correo{
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	font-size: 25px;
+}
+
+#correo h4{
+	margin-top: 3px;
+	font-size: 15px;
+}
+
+#numero{
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	font-size: 25px;
+	margin-right: 60px; 	
+}
+
+#numero h4{
+	margin-top: 3px;
+	font-size: 15px;
+}
+
+
+#redes a{
+	color: #fff;
+	font-size: 40px;
+}
+
+#nombre{
+	display: flex;
+	justify-content: space-around;
+	width: 350px;
+}
+
+#nombre p{
+	font-size: 40px;
+}
+
+#redes a:hover{
+	opacity: .6;
+	transition: all .3s;
+}
+
+
+h1{
+	font-family: Mifuente3;
+}
+
+a{
+	font-family: Mifuente3;
+}
+
+p{
+	font-family: Mifuente;
+	color: #fff;
+}
+
+h4{
+	font-family: Mifuente;
+	color: #fff;
+}
+
+
+
+
+
+/* ESTILOS TABLET*/
+
+@media screen and (max-width: 768px) {
+
+	#promocionalTres{
+		width: 500px;
+		height: 250px;
+		margin-bottom: 10px;
+		margin-top: 50px;
+	}
+
+	#sectionTres h1{
+		margin-top: 60px;
+		font-size: 25px;
+	}
+
+	#sectionTres{
+	}
+
+	.navegacion{
+		width: 220px;
+	}
+	
+	#equis{
+		width: 30px;
+		height: 30px;
+	}
+
+	#promocional{
+		width: 450px;
+		height: 800px;
+		margin: 20px 0px 0px 150px;
+	}
+
+	#ci2 button{
+		margin-left: 360px;
+	}
+
+	#miImagen{
+		margin-top: 200px;
+	}
+
+	#equis a{
+		font-size: 25px;
+
+	}
+
+	.menu > li a{
+		font-size: 1em;
+		padding: 5px 20px;
+
+	}
+
+	.submenu{
+		margin-left: 185px;
+		top: 0px;
+	
+	}
+	
+
+	header a{
+		font-size: 25px;
+	}
+
+
+	header a:hover{
+		font-size: 30px;
+		transition: all .3s;
+	}
+
+	header h1{
+		font-size: 15px;
+	}
+
+	section#sectionUno{
+		flex-direction: column;
+		justify-content:  center;
+		background-size: 112%;
+		background-repeat: no-repeat;
+		height: 347px;
+	}
+
+
+	#ci{
+		text-align: center;
+		padding-top: 0px;
+		margin-top: -65px;
+		margin-right: 9px;
+	}
+
+	#ci h4{
+		font-size: 13px;
+	}
+
+	#ci p{
+		font-size: 25px;
+		margin-top: 270px;
+	}
+
+	#ci a{
+		margin-left: 0vh;
+		padding: 8px 12px 8px 12px;
+		font-size: 10px;
+	}
+
+	#ci a:hover{
+		font-size: 12px;
+		transition: all .3s;
+	}
+
+	#sectionUno img{
+		display: none;
+	}
+
+	#sectionDos{
+		display: inline-block;
+		justify-content: center;
+	}
+
+	#ci2 button{
+	cursor: pointer;
+	padding: 8px 53px 8px 15px;
+	margin-top: -105px;
+	margin-left: 363px;
+	border: 0px solid #fff;
+	border-radius: 60px;
+	background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+	text-decoration: none;
+	color: #fff;
+	align-items: center;
+	font-size: 10px;
+}
+
+	#miBoton{
+		display: none;
+	}
+
+	#ci2{
+		display: flex;
+		flex-direction: column;
+		height: 350px;
+		width: 600px;
+	}
+
+	#miImagen{
+	width: 50vw;
+	margin-left: 198px;
+	background-size: 1110px;
+	background-repeat: no-repeat;
+	margin-bottom: 90px;
+	}
+
+	button{
+		width: 45px;
+		margin-left: 0px;
+		margin-top: 280px;
+	}
+
+	#cd2{
+		align-items: center;
+		text-align: center;
+		margin-top: 40vh	;
+		margin-right: -195px;
+	}
+
+	#cd2 h4{
+		font-size: 20px;
+	}
+
+	#cd2 p{
+		color: black;
+		font-size: 25px;
+		margin-bottom: 40px;
+	}
+
+	.uno{
+	margin-bottom: 50px;
+	}
+
+	.uno a{
+		padding: 12px 18px 12px 18px;
+		border-radius: 60px;
+		background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+		text-decoration: none;
+		color: #fff;
+		font-size: 15px;
+	}
+
+
+	.dos a{
+		padding: 0px 0px 0px 0px;
+		margin-left: 225px;
+		border-radius: 60px;
+		background-image: linear-gradient(90deg, #f74e63, #fe8a65);
+		text-decoration: none;
+		color: #fff;
+		font-size: 18px;
+	}
+
+	.uno a:hover{
+		font-size: 17px;
+		transition: all .3s;
+	}
+	
+
+
+	.dos a:hover{
+		font-size: 17px;
+		transition: all .3s;
+	}
+
+	footer{
+		margin-top: 100px;
+	}
+
+
+	
+
+}
+
+/* ESTILOS CELULAR*/
+
+@media screen and (max-width: 425px) {
+
+	#promocionalTres{
+		margin-left: 370px;
+	}
+
+	#sectionTres h1{
+		display: none;
+	}
+
+	section#sectionUno{
+		width: 181vw;
+	}
+
+	header h1{
+		display: none;
+	}
+
+	#promocional{
+		margin: 20px 0px 0px 140px;
+	}
+
+	.dos a{
+		margin-left: 266px;
+		height: 40px;
+		width: 270px;
+	}
+
+	#miImagen{
+		margin-top: 245px;
+		margin-bottom: 88px;
+	}
+
+	#ci p{
+		font-size: 33px;
+		margin-right: 260px;
+		margin-top: 330px;
+	}
+
+	#ci h4{
+		font-size: 20px;
+		margin-right: 260px;
+	}
+
+	#ci a{
+		margin-left: 115vh;
+		font-size: 18px;
+	}
+
+	#cd2{
+		margin-top: 55vh;
+	}
+
+
+
+	#miImagen{
+		width: 95vw;
+	}
+
+	footer{
+		margin-top: 100px;
+		width: 181vw;
+	}
+
+}
+
+

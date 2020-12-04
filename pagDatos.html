@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Datos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="pagDatos.css">
+	<link rel="icon" href="Icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+	<script defer src="fontawesome/js/all.js"></script>
+</head>
+
+
+
+<body>
+
+	<div id="flotante">
+
+		<div id="cuadro" onclick="cerrar()"></div>
+
+
+			<nav class="navegacion">
+
+				<div id="equis" onclick="cerrar()"><a href="#">
+				<i class="fas fa-times"></i>
+			</a></div>
+				
+				<ul class="menu">
+					
+					<li><a href="index.html" id="inicio">INICIO</a></li>
+					<li><a href="pagDatos.html" id="datos" >DATOS</a>
+
+						<!--<ul class="submenu">
+							<li><a href="animacion.html">ANIMACIONES</a></li>
+							<li><a href="pagDatos.html" id="datos">DATOS</a></li>
+						</ul> -->	
+
+					</li>
+					<li><a href="animacion.html" id="Hola" >ANIMACIONES</a></li>
+
+				</ul>
+
+			</nav>
+
+		</div>
+	</div>
+	<header>
+		<a href="#" id="hamburr" onclick="abrirMenu()">
+			<i class="fas fa-bars"></i>
+		</a>
+		<h1>Sotter</h1>
+	</header>
+	<section id= "sectionUno">
+		<div id= "ci">
+			<p>Éstos son algunos<br>de los datos que<br>sabemos que te<br>interesará saber.</p>
+		</div>
+		<div id= "cd"></div>
+
+	</section>
+
+
+
+
+
+	<section id= "sectionDos">
+		<div id="contenedor">
+			<div id="izq">
+				<img src="Icon1.png">
+				<h4>Se han impuesto 344.457 multas<br>a motociclistas en lo que va de<br> 2020.</h4>
+				<!--<a href="#">Mira la animación acá</a>-->
+			</div>
+
+			<div id="mid">
+				<img src="Icon2.png">
+				<h4>En el 100% de los accidentes de<br>tránsito en un 56% está<br>involucrado un motociclista.</h4>
+				<!--<a href="#">Mira la animación acá</a>-->
+			</div>
+
+			<div id="der">
+				<img src="Icon3.png">
+				<h4>El 93% de los motociclistas<br>no pasan la prueba de freno<br>y evasión de obstáculos.</h4>
+				<!--<a href="#">Mira la animación acá</a>-->
+			</div>
+
+		</div>
+		
+	</section>
+
+
+
+
+	<footer>
+			<div id= "info">
+				<p>Contáctanos</p>
+				<div id="correo">
+					<i class="far fa-envelope"></i>
+					<h4>proyectosotter@gmail.com</h4>
+					
+				</div>
+				<div id="numero">
+					<i class="fas fa-mobile-alt"></i>
+					<h4>+57 3025854456</h4>
+				</div>
+			</div>
+			<nav id="redes">
+				<a href="https://www.facebook.com/Sotter-100860421866186/">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<h1>Sotter</h1>
+			</nav>
+			<div id="nombre">
+				<p>Sotter</p>
+				<a href="https://viamed-pagina.vercel.app/" id="Viamed"> Ir a Viamed</a>
+			</div>
+		</footer>
+
+		<script>
+		
+		var hambur = document.getElementById("hamburr");
+		var cuadro = document.getElementById("cuadro");
+		var equis = document.getElementById("equis");
+		var flotante = document.getElementById("flotante");
+
+		function abrirMenu(){
+			flotante.style.top = "0vh";
+			flotante.style.transitionDuration = ".5s";
+		}
+
+		function cerrar(){
+			flotante.style.top = "-500vh";
+			flotante.style.transitionDuration = ".5s";
+		}
+
+	</script>
+
+
+</body>
+
+
+

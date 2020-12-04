@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sotter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="paginaInicio.css">
+	<link rel="icon" href="Icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+	<script defer src="fontawesome/js/all.js"></script>
+</head>
+<body>
+
+	<div id="flotante">
+
+		<div id="cuadro" onclick="cerrar()"></div>
+
+
+			<nav class="navegacion">
+
+				<div id="equis" onclick="cerrar()"><a href="#">
+				<i class="fas fa-times"></i>
+			</a></div>
+				
+				<ul class="menu">
+					
+					<li><a href="index.html" id="inicio">INICIO</a></li>
+					<li><a href="pagDatos.html" >DATOS</a>
+
+						<!--<ul class="submenu">
+							<li><a href="Animacion.html">ANIMACIONES</a></li>
+							<li><a href="pagDatos.html">DATOS</a></li>
+						</ul>	-->
+
+					</li>
+					<li><a href="animacion.html" id="Hola" >ANIMACIONES</a></li>
+
+				</ul>
+
+			</nav>
+
+		</div>
+	</div>
+	
+	<header>
+		<a href="#" id="hamburr" onclick="abrirMenu()">
+			<i class="fas fa-bars"></i>
+		</a>
+		<h1>Sotter</h1>
+	</header>
+	<section id= "sectionUno">
+		<div id= "ci">
+			<h4>Bienvenido a</h4>
+			<p>Sotter, donde <br> aprenderás a ser un <br>mejor motociclista de una <br> manera estupenda.</p>
+			<a href="">Conócenos</a>	
+		</div>
+		<iframe id="promocional" width="560" height="315" src="https://www.youtube.com/embed/5PUe_NrG-mc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</section>
+
+
+	<section id= "sectionDos">
+		<div id="ci2">
+			<img id="miImagen" src="ciudad2.png">
+			<button>Cambiar</button>
+		</div>
+		<div id="cd2">
+			<h4>¡Mira ya!</h4>
+			<p>Nuestras diferentes <br> animaciones para ti</p>
+			<div class="dos">
+				<a href="Animacion.html" id="pagAnimacion">¡Mira nuestras animaciones acá!</a>
+				 </div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="sectionTres">
+		<h1>Mira nuestro StoryTelling</h1>
+		<iframe id="promocionalTres" width="900" height="500" src="https://www.youtube.com/embed/6Foh1sLe3D4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</section>
+
+
+
+
+
+
+	<footer>
+		<div id= "info">
+			<p>Contáctanos</p>
+			<div id="correo">
+				<i class="far fa-envelope"></i>
+				<h4>proyectosotter@gmail.com</h4>
+				
+			</div>
+			<div id="numero">
+				<i class="fas fa-mobile-alt"></i>
+				<h4>+57 3025854456</h4>
+			</div>
+		</div>
+		<nav id="redes">
+			<a href="https://www.facebook.com/Sotter-100860421866186/">
+				<i class="fab fa-facebook"></i>
+			</a>
+			<h1>Sotter</h1>
+		</nav>
+		<div id="nombre">
+			<p>Sotter</p>
+			<a href="https://viamed-pagina.vercel.app/" id="Viamed"> Ir a Viamed</a>
+		</div>
+	</footer>
+
+	<script>
+		
+		var hambur = document.getElementById("hamburr");
+		var cuadro = document.getElementById("cuadro");
+		var equis = document.getElementById("equis");
+		var flotante = document.getElementById("flotante");
+		var img = document.getElementById("miImagen");
+		var botones = document.getElementsByTagName("button");
+		var ilus = document.getElementsByTagName("img")[0];
+
+		function abrirMenu(){
+			flotante.style.top = "0vh";
+			flotante.style.transitionDuration = ".5s";
+		}
+
+		function cerrar(){
+			flotante.style.top = "-500vh";
+			flotante.style.transitionDuration = ".5s";
+		}
+
+		var e = 1;
+
+		function cambioImag (){
+			if (e == 1) {
+				img.setAttribute("src","ciudad4.png");
+				e = 2;
+			}else if(e == 2){
+				img.setAttribute("src","ciudad5.png");
+				e = 3;
+			}else if(e == 3){
+				img.setAttribute("src","ciudad2.png");
+				e = 1;
+			}
+		
+	}
+
+	var i = 1;
+
+	function mostrarLogo (){
+		if (i == 1) {
+			ilus.setAttribute("src", "icon.png")
+			texto.innerHTML = "Mira la ilustración <i> aquí. </i>"
+			i = 2;
+		}else if(i == 2){
+			ilus.setAttribute("src", "ilustracion.png")
+			texto.innerHTML = "Mira nuestro logo <i> aquí. </i>"
+			i = 1;
+		}
+		
+	}
+
+	botones[0].addEventListener("click", cambioImag);
+
+	</script>
+
+</body>
+</html>

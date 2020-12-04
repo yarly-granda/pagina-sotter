@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animaciones</title>
+	<link rel="stylesheet" href="animaciones.css">
+	<link rel="icon" href="Icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+	<script defer src="fontawesome/js/all.js"></script>
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+</head>
+<body>
+
+	<div id="flotante">
+
+		<div id="cuadro" onclick="cerrarr()"></div>
+
+
+			<nav class="navegacion">
+
+				<div id="equis" onclick="cerrarr()"><a href="#">
+				<i class="fas fa-times"></i>
+			</a></div>
+				
+				<ul class="menu">
+					
+					<li><a href="index.html" id="inicio">INICIO</a></li>
+					<li><a href="pagDatos.html" >DATOS</a>
+
+						<!--<ul class="submenu">
+							<li><a href="animacion.html">ANIMACIONES</a></li>
+							<li><a href="pagDatos.html" id="datos">DATOS</a></li>
+						</ul> -->	
+
+					</li>
+					<li><a href="animacion.html" id="animaciones" >ANIMACIONES</a></li>
+
+				</ul>
+
+			</nav>
+
+		</div>
+	</div>
+	<header>
+		<a href="#" id="hamburr" onclick="abrirMenu()">
+			<i class="fas fa-bars"></i>
+		</a>
+		<h1>Sotter</h1>
+	</header>
+
+	<div class="mapa">
+
+		<div id="vflotante">
+			<div id="vcuadro" onclick="cerrar()"></div>
+			<div id="vmain">
+				<div id="vequis" onclick="cerrar()">X</div>
+					<iframe class="mainimg" width="500" height="300" src="	https://www.youtube.com/embed/flrvILZsA6Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="botones">
+					<button onclick="cambioVideoant()" id="cambioVida">Anterior</button>
+					<button onclick="cambioVideosig()" id="cambioVids">Siguiente</button>
+				</div>
+				
+			</div>
+		</div>
+		<div class="circulo uno">
+			<img src="simboloReproducir.png">
+		</div>
+		<img src="ciudad2.1.png" width="8900%">
+
+		<div class="contenedor">
+			<div id="izquierda">
+				<div class="volver">
+					<a href="index.html">Volver</a>
+					<a href="https://viamed-pagina.vercel.app/" id="Viamed"> Ir a Viamed</a> 
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+
+		<div class="mapaimg">
+			
+		</div>
+		
+
+	<script src="Js/Animacion.js"></script>
+
+		
+
+	<script>
+		var btn = document.getElementsByClassName("circulo");
+		var vflotante = document.getElementById("vflotante");
+		var equis = document.getElementById("vequis");
+		var pantalla = document.getElementById("videos");
+		var hambur = document.getElementById("hamburr");
+		var cuadro = document.getElementById("cuadro");
+		var equis = document.getElementById("equis");
+		var flotante = document.getElementById("flotante");
+		var videoYT = document.getElementsByTagName("iframe")[0];
+		var e = 1;
+
+		btn[0].addEventListener("click", video1);
+		btn[1].addEventListener("click", video2);
+		btn[2].addEventListener("click", video3);
+		btn[3].addEventListener("click", video4);
+
+		function abrirMenu(){
+			flotante.style.top = "0vh";
+			flotante.style.transitionDuration = "1s";
+		}
+
+		function cerrarr(){
+			flotante.style.top = "-500vh";
+			flotante.style.transitionDuration = "4s";
+		}
+
+		function cambioVideosig(){
+			if (e == 1) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/D-EkNs0lmWs");
+				e = 2;
+			}else if (e == 2) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/VShwUbqwLq0");
+				e = 3;
+			}else if (e == 3) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/LYh5XzQdKSE");
+				e = 4;
+			}else if (e == 4) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/epswYDv8JRU");
+				e = 5;
+			}else if (e == 5) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/flrvILZsA6Q");
+				e = 1;
+			}
+		}
+
+		function cambioVideoant(){
+			if (e == 1) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/epswYDv8JRU");
+				e = 5;
+			}else if (e == 5) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/LYh5XzQdKSE");
+				e = 4;
+			}else if (e == 4) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/VShwUbqwLq0");
+				e = 3;
+			}else if (e == 3) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/D-EkNs0lmWs");
+				e = 2;
+			}else if (e == 2) {
+				videoYT.setAttribute("src","https://www.youtube.com/embed/flrvILZsA6Q");
+				e = 1;
+			}
+		}
+
+
+		function video1(){
+				vflotante.style.top = "-9vh";
+				vflotante.style.transitionDuration = "1s"
+		}
+
+		function cerrar(){
+			vflotante.style.top = "-109vh";
+			vflotante.style.transitionDuration = "1s"
+		}
+
+
+	</script>
+
+
+</body>
+</html>
